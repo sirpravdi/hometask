@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1280">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/new.css"/>
+</head>
+<body class="page-is-loading no-scroll">
+    <div class="wrapper">
+        <div class="top-panel">
+            <div class="top-panel__avatar-block">
+                <div class="top-panel__avatar"><img width="40" height="40" src="images/content/img1.jpg" alt="Гатина Эльвира Тауфиковна"></div>
+            </div>
+            <div class="top-panel__inner clearfix">
+                <div class="top-panel__left">
+                    <p class="top-panel__note">Вы вошли в систему как менеджер DS-Sales:</p>
+                    <p class="top-panel__user">Гатина Эльвира Тауфиковна <a class="top-panel__logout" href="#" title="Выход"><span class="icon icon--1"></span></a></p>
+                </div>
+                <div class="top-panel__right">
+                    <div class="top-panel__calendar">
+                        <span class="top-panel__calendar-icon icon icon--2"></span>
+                        <span id="day_num" class="top-panel__calendar-date">01</span>
+                        <span class="top-panel__calendar-text"><span id="month">января</span><br> <span id="day">пн.</span></span>
+                        <span id="time" class="top-panel__calendar-time">00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="side-panel scrolled">
+                <button class="switcher is-active" type="button"><span class="switcher__icon"><span class="icon icon--3"></span></span>ОФИС</button>
+            </div>
+            <div class="section">
+                <div class="nc-page">
+                    <div class="nc-page__title-block">
+                        <h1 class="nc-page__title">Данные об обращениях</h1>
+                        <div class="nc-page__button-block">
+                            <button class="nc-page__button" type="button">новый поиск</button>
+                        </div>
+                    </div>
+                    <div class="nc-form">
+                        <div class="nc-formhead">
+                            <div class="nc-formhead__params">ПАРАМЕТРЫ ЗВОНКА:</div>
+                            <div class="nc-formhead__phone"> <span class="icon icon--11"> </span>НОМЕР ТЕЛЕФОНА: +7(926)917-68-53</div>
+                            <div class="nc-formhead__vdn"> <span class="icon icon--78"> </span>VDN: ПРИВЛЕЧЕНИЕ КЛИЕНТА</div>
+                        </div>
+                        <div class="nc-section">
+                            <div class="nc-section__reqparams">
+                                <div class="nc-section__reqtitle"> 
+                                    <span class="nc-section__rptext">ПАРАМЕТРЫ ОБРАЩЕНИЯ:</span>
+                                </div>
+                                <div class="nc-section__reqwrap">
+                                    <div class="nc-section__serv-type">
+                                        <div class="nc-section__sttext"><span class="icon icon--80"></span>ТИП ОБСЛУЖИВАНИЯ:</div>
+                                        <div class="nc-section__viewmode">
+                                            <button class="nc-section__vm-button nc-section_button-unselected" id="nc_view_mode" type="button">РЕЖИМ ПРОСМОТРА</button>
+                                        </div>
+                                        <div class="nc-section__servmode">
+                                            <button class="nc-section__sm-button nc-section_button-unselected" id="nc_client_serv" type="button">ОБСЛУЖИВАНИЕ КЛИЕНТОВ</button>
+                                        </div>
+                                    </div>
+                                    <div class="nc-section__req-type">
+                                        <div class="nc-section__reqttext"><span class="icon icon--81"></span>ТИП ОБРАЩЕНИЯ:</div>
+                                        <div class="nc-section__offline">
+                                            <button class="nc-section__off-button nc-section_button-unselected" id="nc_offline_view" type="button">ОФЛАЙН ПРОСМОТР</button>
+                                        </div>
+                                        <div class="nc-section__incoming-call">
+                                            <button class="nc-section__icall-button nc-section_button-unselected" id="nc_out_call" type="button">ИСХОДЯЩИЙ ЗВОНОК</button>
+                                        </div>
+                                        <div class="nc-section__outgoing-call">
+                                            <button class="nc-section__ocall-button nc-section_button-unselected" id="nc_in_call" type="button">ВХОДЯЩИЙ ЗВОНОК</button>
+                                        </div>
+                                    </div>
+                                    <div class="nc-section__action">
+                                        <div class="nc-section__atext"> <span class="icon icon--81"></span>ДЕЙСТВИЕ:</div>
+                                        <div class="nc-section__aname"> <select class="nc-section__aselect"><option>Заведена задача в pyrus</option></select></div>
+                                    </div>
+                                    <div class="nc-section__addcomment">
+                                        <div class="nc-section__actext"><span class="icon icon--82"></span>ДОБАВИТЬ КОММЕНТАРИЙ:</div>
+                                        <div class="nc-section__cwindow" contenteditable="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nc-section__reqtheme">
+                                <div class="nc-section__rthemetitle">
+                                    <span class="nc-section__rttext">ТЕМАТИКА ОБРАЩЕНИЯ:</span>
+                                </div>
+                                <div class="nc-section_theme-options">
+                                    <div class="nc-section__accoper nc-section_option-unselected" id="nc_accoper"> <span class="icon icon--22"></span>ОПЕРАЦИИ ПО ДЕЙСТВУЮЩИМ СЧЕТАМ
+                                    </div>
+                                    <div class="nc-section__cardoper nc-section_option-unselected" id="nc_cardoper"> <span class="icon icon--22"></span>ОПЕРАЦИИ ПО КАРТАМ
+                                    </div>
+                                    <div class="nc-section__dbo nc-section_option-unselected" id="nc_dbo"> <span class="icon icon--22"></span>ДИСТАНЦИОННОЕ БАНКОВСКОЕ ОБСЛУЖИВАНИЕ
+                                    </div>
+                                </div>
+                                <div class="nc-section__addtheme">
+                                    <button class="nc-section__addthemebutton" type="button" onclick="location.href='page_notclient.html'"><span class="icon icon--57"></span>ДОБАВИТЬ ТЕМАТИКУ ОБРАЩЕНИЯ</button>
+                                    <div class="nc-section__themelist">
+                                        <ul class="nc-section__themelist-ul">
+                                            <li class="nc-section__themelist-li nc-section__themelist-unselected-li"><span class="icon icon--10"></span>ОФОРМЛЕНИЕ ПРОДУКТОВ БАНКА</li>
+                                            <li class="nc-section__themelist-li nc-section__themelist-unselected-li"><span class="icon icon--10"></span>СОСТОЯНИЕ СЧЕТА</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nc-section__save">
+                            <div class="nc-section__stitle"><span class="icon icon--83"></span>СОХРАНИТЬ РЕЗУЛЬТАТЫ ЗВОНКА</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/layout.js"></script>
+        <script type="text/javascript" src="js/page_notclient.js"></script>
+    </body>
+    </html>
